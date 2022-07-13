@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Login System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="center">
+  <div class="container">
+    <div class="form">
+      <div class="done center">You Are  Sing up</div>
+      <div class="inputs">
+        <div class="input-el">
+          <label for="user">user name</label>
+          <div class="input">
+            <input type="text" id="user" placeholder="Enter Your Email">
+            <span data-valid="Done" data-novalid="Enter Valid Name" class="regex_name"></span>
+          </div>
+        </div>
+        <div class="input-el">
+          <label for="email">email</label>
+          <div class="input">
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <span data-valid="Done" data-novalid="Enter Valid Email" class="regex_email"></span>
+          </div>
+        </div>
+        <div class="input-el">
+          <label for="pass">password</label>
+          <div class="input">
+            <input type="password" id="pass" placeholder="Enter Your Password">
+            <span data-valid="Done" data-novalid="Enter Valid password" class="regex_pass"></span>
+          </div>
+
+          <div class="input">
+            <input type="password" id="apass" placeholder="Re-enter Your Password">
+            <span data-valid="Done" data-novalid="Enter Valid password" class="regex_apass"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="control">
+        <button class="next">Next</button>
+        <button class="submit">submit</button>
+      </div>
+      <div class="user_data center">
+        <h2 data-name="Name: " class="user_name"></h2>
+        <h2 data-name="Email: " class="user_email"></h2>
+     <button class="singout">Sing Out</button>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

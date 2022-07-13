@@ -19,6 +19,10 @@
   }
 }
 
+.container {
+  margin: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,11 +47,13 @@
 body {
   background: var(--bg);
   height: 100vh;
+  font-family: Tahoma;
 }
 
 .form {
   background: var(--el);
   padding: 5px;
+  margin: auto;;
   border-radius: 1rem;
   width: 320px;
   height: 250px;
@@ -144,8 +150,8 @@ button:focus {
   padding: 5px;
 }
 
-.control button ,
-.singout{
+.control button,
+.singout {
   border: none;
   padding: 10px 20px;
   width: 100%;
@@ -203,11 +209,12 @@ button:focus {
 .user_data h2 {
   width: 100%;
   text-align: left;
-  padding: 15px 0 0 50px ;
+  padding: 15px 0 0 50px;
   color: var(--text);
   position: relative;
   white-space: wrap;
 }
+
 .user_data h2::before {
   content: attr(data-name);
   position: absolute;
@@ -216,6 +223,7 @@ button:focus {
   transform: translateY(-50%);
   color: #26CB71;
 }
+
 .user_data.active {
   height: 100%;
 
